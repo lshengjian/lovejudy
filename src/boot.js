@@ -4,7 +4,7 @@ let shaders=[
     // 'mandelbrot2',
      'mandelbrot3',
     // 'mandelbrot4',
-    // 'mandelbrot5',
+     'mandelbrot5',
      'sky']
 
 export default class Boot extends Phaser.State {
@@ -16,7 +16,7 @@ export default class Boot extends Phaser.State {
         this.scale.pageAlignHorizontally = true;
         this.scale.pageAlignVertically = true;
 
-        this.load.crossOrigin = 'anonymous';
+       // this.load.crossOrigin = 'anonymous';
         let idx=this.game.rnd.integer()%shaders.length;
         this.game.load.shader('demo', 'assets/shaders/'+shaders[idx]+'.frag');
         this.load.audio('music', 'assets/bgm.mp3');
