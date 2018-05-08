@@ -1,0 +1,24 @@
+{
+  "name": "phaser-go",
+  "version": "1.0.0",
+  "description": "phaser game demo",
+  "main": "electron-main.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server --config webpack.dev.config.js --open",
+    "pack": "npm run build && node ./scripts/packageElectronApp.js"
+  },
+  "keywords": [
+    "phaserce"
+  ],
+  "author": "alex",
+  "license": "MIT",
+  "dependencies": {
+    "phaser-ce": "^2.10.3"
+  },
+  "devDependencies": {
+    "electron": "^1.8.4",
+    "electron-packager": "^12.0.1",
+    "expose-loader": "^0.7.5"
+  }
+}
